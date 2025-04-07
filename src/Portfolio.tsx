@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [showResume, setShowResume] = useState(false);
 
   useEffect(() => {
-    document.title = "Lucky's Portfolio";
+    document.title = "Lucky's Pastel Portfolio";
   }, []);
 
   const sectionVariants = {
@@ -26,28 +26,28 @@ export default function Portfolio() {
   const sections = [
     {
       title: "Hi, I'm Lucky!",
-      content: "A passionate software engineer who blends backend logic with frontend elegance. I love building clean, scalable web applications.",
+      content: "A creative engineer passionate about pastel aesthetics, building things that are both beautiful and functional.",
     },
     {
-      title: "What I Do",
-      content: "Specialized in Java, Spring Boot, and Angular. Experienced with cloud services, microservices, and frontend magic with animations.",
+      title: "Skills & Strengths",
+      content: "Java, Spring Boot, Angular, React, and cloud infrastructure. I bring color and clarity to every codebase.",
     },
     {
       title: "Projects",
-      content: "Check out my latest work on GitHub—from AI storytelling engines to full-stack dashboards with delightful user experiences.",
+      content: "Pastel-themed dashboards, animated storybooks, and personal tools – all open-sourced on GitHub.",
     },
     {
       title: "Resume",
-      content: "Here's a snapshot of my experience, skills, and education. You can view it directly below!",
+      content: "Take a look at my experience and education. The resume viewer is below!",
     },
     {
       title: "Let's Connect",
-      content: "Always open to opportunities, collaborations, and coffee chats. You can reach me via email or social platforms below!",
+      content: "I'm always happy to chat – whether it's tech, design, or a good cafe recommendation!",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 px-4 py-10 font-sans">
+    <div className="min-h-screen bg-pastel-pink text-gray-800 px-4 py-10 font-sans">
       <div className="max-w-4xl mx-auto space-y-16">
         {sections.map((section, index) => (
           <motion.div
@@ -59,13 +59,13 @@ export default function Portfolio() {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold text-gray-900">{section.title}</h2>
-            <p className="text-lg leading-relaxed text-gray-600">{section.content}</p>
+            <p className="text-lg leading-relaxed text-gray-700">{section.content}</p>
 
             {section.title === "Resume" && (
               <>
                 <button
                   onClick={() => setShowResume(!showResume)}
-                  className="inline-block mt-4 px-6 py-3 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition"
+                  className="inline-block mt-4 px-6 py-3 bg-pastel-blue text-white rounded-xl shadow hover:bg-pastel-lavender transition"
                 >
                   {showResume ? "Hide Resume" : "View Resume"}
                 </button>
