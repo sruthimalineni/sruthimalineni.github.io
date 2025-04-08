@@ -1,1 +1,0 @@
-# sruthimalineni.github.io
